@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://supsok.github.io/gbsw/touchstrap/css/touchstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://supsok.github.io/gbsw/touchstrap/js/touchstrap.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/script.js"></script>
+    <title>321치즈 l 당신과 나의 공동점</title>
+</head>
+
+<body>
+    <header class="bar bar-nav">
+        <img src="../../src/img/logo.png" alt="" class="logo_header">
+
+    </header>
+
+
+
+    <section class="mainpage_section_mainBox">
+        <div class="wrap">
+            <div class="inner">
+
+
+
+                <form action="#" method="post" class="createRoom_form">
+                    <p class="form_title">새로운 룸 생성</p>
+
+
+                    <div class="mb-3">
+                        <input type="text" class="room_input" id="name_inp" name="r_name" placeholder="룸 이름을 입력하세요">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="room_input" id="pw_inp" name="r_pw"
+                            placeholder="룸 입장 비밀번호를 설정하세요">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="room_input" id="text_inp" name="r_text"
+                            placeholder="룸에 대한 간단한 설명을 입력하세요">
+                    </div>
+
+
+                    <div class="mb-3 color_input" >
+                        <label for="body">룸 대표 색</label>
+                        
+                        <input type="color" class="input_room_body_color" id="body_color" name="body_color"
+                            value="#FFCD4A">
+                        
+                    </div>
+
+                    <label class="input_title">룸 대표 이미지</label>
+                    <div class="mb-3 img_input">
+                        <input id="img_room" class="hidden" type="file" onchange="readURL(this);">
+                        <label for="img_room" class="img_room_label"><img id="preview" src="../../src/img/room_img_nomal.png" /></label>
+                        <label for="img_room" class="room_img_black"> <p class="intro_text">사진을 변경하려면 클릭하세요.</p></label>
+                       
+                    </div>
+
+                    <button type="button" class="section_main_yellow_button">룸 생성</button>
+
+
+
+                </form>
+
+
+
+
+
+            </div>
+    </section>
+
+
+
+    <nav class="bar bar-tab bar-light">
+        <a class="tab-item " role="button" href="./main.html">
+            <span class="icon icon-home"></span>
+            <span class="tab-label">홈</span>
+        </a>
+
+        <a class="tab-item " role="button" href="./list.html">
+            <span class="icon icon-bars"></span>
+            <span class="tab-label">룸 목록</span>
+        </a>
+        <a class="tab-item active" role="button" href="./createRoom.html">
+            <span class="icon icon-plus"></span>
+            <span class="tab-label">룸 생성</span>
+
+        </a>
+        <a class="tab-item " role="button" href="./search.html">
+            <span class="icon icon-search"></span>
+            <span class="tab-label">검색</span>
+        </a>
+
+        <a class="tab-item " role="button" href="./profile.html">
+            <span class="icon icon-person"></span>
+            <span class="tab-label">프로필</span>
+        </a>
+
+    </nav>
+</body>
+
+</html>
